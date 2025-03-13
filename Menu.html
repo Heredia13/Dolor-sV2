@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolores • Accueil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            animation: backgroundAnimation 15s infinite;
+            transition: background-color 0.5s;
+        }
+
+        @keyframes backgroundAnimation {
+            0%, 100% { background-color: #f0f8ff; }
+            50% { background-color: #e0f7fa; }
+        }
+
+        .header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: headerAnimation 10s infinite;
+            transition: background-color 0.5s;
+        }
+
+        @keyframes headerAnimation {
+            0%, 100% { background-color: #ff6f61; }
+            50% { background-color: #ffcc5c; }
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            background-color: #ff8f00;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .app-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .app-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .app-item h3 {
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .app-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .footer {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff8f00;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e65100;
+        }
+
+        .logout {
+            background-color: #ff6f61;
+        }
+
+        .logout:hover {
+            background-color: #e64a19;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Img/Dolorés.png" alt="Logo Dolores">
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="section-title">🄽🄾🅃🅁🄴 🄻🄸🅂🅃🄴</div>
+            <div class="app-grid">
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Addition ou Soustraction ou Multiplication">
+                    <h3>Apprends les bases de l'addition, soustraction ou multiplication avec des exercices simples et amusants.</h3>
+                    <a href="Bouton.html" class="button">Commencer</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Anglais">
+                    <h3>Apprends l'anglais avec des jeux adaptés à ton niveau.</h3>
+                    <a href="Anglais.html" class="button">Apprendre</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Apprendre l'Heure">
+                    <h3>Explore l'univers de l'heure.</h3>
+                    <a href="Heure.html" class="button">Lire l'heure</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Compléter">
+                    <h3>Complète les phrases avec "au" ou "chez".</h3>
+                    <a href="Complétez.html" class="button">"au" ou "chez"</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Date et Heure">
+                    <h3>Quel jour sommes-nous aujourd'hui ?</h3>
+                    <a href="Horloge_date.html" class="button">Date et heure</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Déterminants">
+                    <h3>Explore les déterminants grâce à des activités interactives.</h3>
+                    <a href="Déterminants.html" class="button">Apprendre</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Histoire">
+                    <h3>Plonge dans des récits captivants et découvre des mondes fantastiques.</h3>
+                    <a href="Histoire.html" class="button">Lire cette histoire</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="L'Antiquité">
+                    <h3>Découvre les civilisations majeures de l'Antiquité.</h3>
+                    <a href="L’Antiquité.html" class="button">L'Antiquité</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Invariables">
+                    <h3>Un mot invariable est un mot qui ne change jamais. Découvre les différents types de mots invariables.</h3>
+                    <a href="invariables.html" class="button">Liste des mots invariables</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Orthographe">
+                    <h3>Améliore ton orthographe avec des dictées amusantes.</h3>
+                    <a href="orthographe.html" class="button">Apprendre</a>
+                </div>
+                <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Recopier">
+                    <h3>Apprends à recopier un texte.</h3>
+                    <a href="Recopier.html" class="button">Recopier</a>
+                </div>
+               <!--
+               <div class="app-item">
+                    <img src="https://via.placeholder.com/100" alt="Tables de Multiplication">
+                    <h3>Voici les tables de multiplication de 1 à 10.</h3>
+                    <a href="BoutonX.html" class="button">Tables de multiplication</a>
+                </div>
+                ---!>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="Index.html" class="button logout">Déconnexion</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="Condition.html">Devoir Dolorés &copy; 2025 droits réservés.</a>
+    </div>
+</body>
+</html>
